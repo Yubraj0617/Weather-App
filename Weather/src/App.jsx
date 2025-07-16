@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
+
 export default function App() {
 
   const [temp, settemp] = useState("Null");
@@ -12,8 +13,8 @@ export default function App() {
 
 
 
-  const Key = "8af7ea4db25e9e4b553b9e78727e34ec"  //open weather key
-  // const Key = "dde358e8e33040038b1155347251407"
+  let Key = import.meta.env.VITE_API_KEY; //open weather key
+
   let url;
 
   const handleData = (e) => {
